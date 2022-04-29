@@ -1,3 +1,5 @@
-StringBuilder.reverse()
+- String str = String.valueOf(sc.nextInt()); //将int型数字转换为string型
 
-StringBuffer.reverse()
+- StringBuilder.reverse()
+
+- StringBuffer.reverse()
