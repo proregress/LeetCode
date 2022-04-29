@@ -1,0 +1,3 @@
+StringBuilder.reverse()
+
+StringBuffer.reverse()
