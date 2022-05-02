@@ -15,7 +15,13 @@ letters.sort(new Comparator<Character>(){
 ```
 
 #### 3、Collections.sort(List) 重写排序方法：
-
+```
+Collections.sort(list, new Comparator<Map.Entry>(){
+            public int compareTo(Map.Entry o1, Map.Entry o2){
+                return ;
+            }
+});
+```
 
 #### 4、
 ```
