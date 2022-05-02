@@ -13,3 +13,20 @@ letters.sort(new Comparator<Character>(){
             }
         });
 ```
+
+#### 3、Collections.sort(List) 重写排序方法：
+
+
+#### 4、
+```
+  Arrays.sort(char[])  
+  Collections.sort(List) 
+  list.sort()
+  
+  List.sort是在Java8中的，直接使用，重写compare()方法
+  list.sort(new Comparator<String>(){
+    //比较逻辑
+  });
+
+  Collections.sort(list) 是在Java8之前常用的，比较对象，需要对象重写compareTo方法
+```
