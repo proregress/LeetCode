@@ -25,6 +25,14 @@
 ```
   Arrays.sort(char[])  
   Collections.sort(List) 
+  list.sort()
+  
+  List.sort是在Java8中的，直接使用：
+  list.sort(new Comparator<String>(){
+    //比较逻辑
+  });
+
+（ps:Collections.sort(list) 这个是在Java8之前常用的，比较对象，需要对象重写compareTo方法）
   ```
   
   ```
