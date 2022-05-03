@@ -25,3 +25,9 @@
 String str = "";
 String str = new String();
 ```
+
+#### 4.str1.split("\\.")
+```
+String str1 = "10.0.3.193";
+String[] arr = str1.split("\\.");
+```
