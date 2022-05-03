@@ -20,14 +20,40 @@
 |  ----  | ----  | ----  |
 | 2进制 --> 10  | long l = Long.parseLong(String s, 2); | long类型 |
 
-#### 3.新建一个字符串
+#### 3.字符串 <--> Integer
+#### int --> String: 4种
+```
+String s = String.valueOf(int i);
+String s = Integer.toString(int i);
+String s = i + ""; //i为int类型， int+String型就是先将int型的i转为String型然后加上后面的空String
+String s = i.toString(); //Integer i = new Integer(int n); i为Integer类型
+
+效率排序：Integer.toString(int i）> String.valueOf(int i) > i+""
+```
+#### String --> int: 2种
+```
+int i = Integer.parseInt(String s);
+
+```
+
+#### 4.字符串 <--> Long
+```
+Long l = Long.valueOf(String s); //返回Long包装类
+long l = Long.parseLong(String s); //返回long基本数据类型
+
+String s = String.valueOf(long l);
+String s = Long.toString(long);
+```
+
+#### 5.新建一个字符串
 ```
 String str = "";
 String str = new String();
 ```
 
-#### 4.str1.split("\\.")
+#### 6.str1.split("\\.")
 ```
 String str1 = "10.0.3.193";
 String[] arr = str1.split("\\.");
 ```
+
