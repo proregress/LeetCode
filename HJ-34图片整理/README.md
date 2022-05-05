@@ -3,3 +3,11 @@
 ```
 System.out.println(Arrays.sort(strArr)); //报错
 ```
+```
+String str = Arrays.sort(strArr); //报错
+```
+```
+正确
+Arrays.sort(strArr); 
+System.out.println(strArr);
+```
