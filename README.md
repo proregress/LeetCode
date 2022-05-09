@@ -11,3 +11,5 @@
 #### [HJ6 质数因子](https://github.com/proregress/LeetCode/blob/master/HJ6-质数因子/Main.java)
 
 #### [HJ60 查找组成一个偶数最接近的两个素数](https://github.com/proregress/LeetCode/tree/master/HJ60-查找组成一个偶数最接近的两个素数)
+
+#### 贪心-[HJ45 名字的漂亮度](https://www.nowcoder.com/practice/02cb8d3597cf416d9f6ae1b9ddc4fde3)
