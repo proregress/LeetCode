@@ -1,3 +1,5 @@
+package hj.HJ51_输出单向链表中倒数第k个结点;
+
 /***
 题目考察有：
 考察参赛者构建链表能力；
@@ -10,6 +12,7 @@
 但本题必须要(1)正序构建链表;(2)构建后要忘记链表长度。
 ***/
 
+import entity.ListNode;
 import java.util.Scanner;
 
 public class Main {
@@ -37,15 +40,6 @@ public class Main {
             
             System.out.println(headNode.val);
         }
-    }
-}
-class ListNode{
-    int val;
-    ListNode nextNode;
-    
-    public ListNode(Integer val){
-        this.val = val;
-        this.nextNode = null;
     }
 }
 
