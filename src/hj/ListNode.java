@@ -1,4 +1,4 @@
-package entity;
+package hj;
 
 public class ListNode {
     public int val;

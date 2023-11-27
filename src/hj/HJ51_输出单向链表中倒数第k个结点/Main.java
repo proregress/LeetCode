@@ -12,7 +12,7 @@ package hj.HJ51_输出单向链表中倒数第k个结点;
 但本题必须要(1)正序构建链表;(2)构建后要忘记链表长度。
 ***/
 
-import entity.ListNode;
+import hj.ListNode;
 import java.util.Scanner;
 
 public class Main {

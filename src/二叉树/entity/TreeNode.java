@@ -1,4 +1,4 @@
-package entity;
+package 二叉树.entity;
 
 public class TreeNode {
     public Integer val;

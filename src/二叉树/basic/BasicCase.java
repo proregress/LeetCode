@@ -1,4 +1,4 @@
-package basic;
+package 二叉树.basic;
 
 public class BasicCase {
     public static void main(String[] args) {
