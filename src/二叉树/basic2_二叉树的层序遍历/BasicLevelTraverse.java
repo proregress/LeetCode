@@ -1,4 +1,4 @@
-package 二叉树.basic;
+package 二叉树.basic2_二叉树的层序遍历;
 
 import 二叉树.entity.Node;
 

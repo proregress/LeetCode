@@ -1,24 +1,6 @@
-package 二叉树.basic;
+package 二叉树.basic0_迭代与遍历;
 
 public class BasicCase {
-    public static void main(String[] args) {
-        //数组遍历
-        Integer[] arr = new Integer[]{1, 2, 3, 4, 5, 6, 7, 8};
-        traverse1(arr);
-        traverse2(arr);
-        traverse3(arr, 0);
-        System.out.println();
-        System.out.println();
-
-        //链表遍历
-        ListNode head = node();
-        traverse4(head);
-        System.out.println();
-        traverse5(head);
-        System.out.println();
-        traverse6(head);
-    }
-
 
     /**
      * 迭代遍历数组1
@@ -85,6 +67,23 @@ public class BasicCase {
 
     }
 
+    public static void main(String[] args) {
+        //数组遍历
+        Integer[] arr = new Integer[]{1, 2, 3, 4, 5, 6, 7, 8};
+        traverse1(arr);
+        traverse2(arr);
+        traverse3(arr, 0);
+        System.out.println();
+        System.out.println();
+
+        //链表遍历
+        ListNode head = node();
+        traverse4(head);
+        System.out.println();
+        traverse5(head);
+        System.out.println();
+        traverse6(head);
+    }
 
     /**
      * 定义一个单链表并放入数据
