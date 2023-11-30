@@ -18,6 +18,7 @@ class Solution {
         }
         int left = maxLenth(root.left);
         int right = maxLenth(root.right);
+        //在后续位置做文章
         int temp = left + right;
         max = Math.max(temp, max);
 
