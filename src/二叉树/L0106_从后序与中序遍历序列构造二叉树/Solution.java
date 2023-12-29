@@ -1,7 +1,7 @@
 package 二叉树.L0106_从后序与中序遍历序列构造二叉树;
 
 import 二叉树.entity.TreeNode;
-//test20231227
+
 public class Solution {
     public TreeNode buildTree(int[] inorder, int[] postorder) {
         return build(inorder,0,inorder.length-1, postorder,0,postorder.length-1);
@@ -33,8 +33,6 @@ public class Solution {
 
         return root;
     }
-
-    //new branch
 }
 
 
