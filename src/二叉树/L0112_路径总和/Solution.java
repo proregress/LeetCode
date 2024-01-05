@@ -1,0 +1,16 @@
+package 二叉树.L0112_路径总和;
+
+import 二叉树.entity.TreeNode;
+
+public class Solution {
+    public boolean hasPathSum(TreeNode root, int targetSum) {
+        if(root == null){
+            return false;
+        }
+        if(root.left == null && root.right == null){
+            return root.val == targetSum;
+        }
+        return hasPathSum(root.left, targetSum-root.val) || hasPathSum(root.right, targetSum-root.val);
+
+    }
+}
