@@ -1,4 +1,4 @@
-package 二叉树.L0538.把二叉搜索树转化为累加树;
+package 二叉树.L0538_把二叉搜索树转化为累加树;
 
 import 二叉树.entity.TreeNode;
 
@@ -31,7 +31,7 @@ public class Solution {
         root.left = left;
         root.right = right;
         left.left = leftLeft;
-        convertBST(root);
+        Solution2.convertBST(root);
 
         System.out.println("map = " + map);
         System.out.println("beforelist = " + beforelist);
