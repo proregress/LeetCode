@@ -23,9 +23,9 @@ public class BasicIsInTree {
         if (root.val == target) return true;
 
         if(root.val > target )
-            return isInBST(root.right, target);
-        if(root.val < target )
             return isInBST(root.left, target);
+        if(root.val < target )
+            return isInBST(root.right, target);
 
         return false;
     }
