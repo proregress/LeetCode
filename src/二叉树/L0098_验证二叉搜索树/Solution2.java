@@ -9,7 +9,7 @@ import 二叉树.entity.TreeNode;
  */
 
 public class Solution2 {
-    //todo ： [5,4,6,null,null,3,7]
+    //todo ： [5,4,6,null,null,3,7]，理解为啥中序验证val<=min就能严格保证是BST
     Boolean flag = true;
     // 这里是关键， Integer.MIN_VALUE, Double.MIN_VALUE都不行
     double min = -Double.MAX_VALUE;
