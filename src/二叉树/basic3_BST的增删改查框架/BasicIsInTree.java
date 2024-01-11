@@ -1,4 +1,4 @@
-package 二叉树.basic3_在BT和BST中寻找元素;
+package 二叉树.basic3_BST的增删改查框架;
 
 import 二叉树.entity.TreeNode;
 
@@ -42,6 +42,37 @@ public class BasicIsInTree {
             BST(root.left, target);
         if(root.val < target)
                 BST(root.right, target);
+    }
+
+    /**
+     * BST插入新节点框架
+     */
+    TreeNode insertIntoBST(TreeNode root, int val){
+        if(root == null) return new TreeNode(val);
+//        if(root.val == val){ } //BST一般不会插入已存在元素
+        if(root.val > val){
+            root.left = insertIntoBST(root.left,val);
+        }
+        if(root.val < val){
+            root.right = insertIntoBST(root.right,val);
+        }
+        return root;
+    }
+
+    /**
+     * 在BST中删除一个数的框架
+     */
+    TreeNode deleteNode(TreeNode root, int key){
+        if(root.val == key){
+            //找到，进行删除
+        }else if(root.val > key){
+            //去左子树找
+            root.left = deleteNode(root.left, key);
+        }else if(root.val < key){
+            //去右子树找
+            root.right = deleteNode(root.right, key);
+        }
+        return root;
     }
 
 }
