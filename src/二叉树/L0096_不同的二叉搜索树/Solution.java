@@ -9,6 +9,7 @@ public class Solution {
     }
 
     private int count(int low, int hi){
+        //base case，显然当lo > hi闭区间[lo, hi]肯定是个空区间，也就对应着空节点 null，虽然是空节点，但是也是一种情况，所以要返回 1 而不能返回 0。
         if(low > hi){
             return 1;
         }
