@@ -27,9 +27,6 @@ public class Solution {
         }
 
         for(int i = start; i < nums.length; i++){
-            if (track.contains(nums[i])){
-                continue;
-            }
             track.addLast(nums[i]);
             dfs(nums,i+1, track, k);
             track.removeLast();
