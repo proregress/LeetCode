@@ -16,11 +16,11 @@ public class Solution {
         for(int i = 1; i <= n; i++){
             nums[i-1] = i;
         }
-        dfs(nums,0, track, k);
+        dfs(nums,0, k);
         return res;
     }
 
-    private void dfs(int[] nums, int start, LinkedList<Integer> track, int k){
+    private void dfs(int[] nums, int start,int k){
         if(track.size() == k){
             res.add(new LinkedList<>(track));
             return;
@@ -28,7 +28,7 @@ public class Solution {
 
         for(int i = start; i < nums.length; i++){
             track.addLast(nums[i]);
-            dfs(nums,i+1, track, k);
+            dfs(nums,i+1, k);
             track.removeLast();
         }
 
