@@ -1,4 +1,4 @@
-package dfs.L0046_全排列;
+package dfs.子集_排列_组合.L0046_全排列;
 
 import java.util.LinkedList;
 import java.util.List;

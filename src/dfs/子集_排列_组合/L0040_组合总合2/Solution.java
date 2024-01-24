@@ -1,4 +1,4 @@
-package dfs.L0040_组合总合2;
+package dfs.子集_排列_组合.L0040_组合总合2;
 
 import java.util.Arrays;
 import java.util.LinkedList;
