@@ -1,5 +1,11 @@
 package dp.L0053_最大子数组和;
 
+/**
+ * TODO:
+ * 1. 空间压缩，提升空间复杂度：https://mp.weixin.qq.com/s/-JP7dc8_A5KWC394tQIV1g
+ * 2. 前缀和思路：https://mp.weixin.qq.com/s/-JP7dc8_A5KWC394tQIV1g
+ * 3. 分治算法
+ */
 public class Solution {
     public static void main(String[] args) {
         int[] nums = {-3, 4, -1 , 2, -6, 1, 4};
