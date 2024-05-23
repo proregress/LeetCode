@@ -27,6 +27,10 @@ public class Solution {
                  l++;
             }*/
 
+            /*
+            在这里没有对左边界l的范围做限制，但l是不会超的，
+            因为l最多等于r的时候，while括号内左边的结果为0， k最小为0，0 > 0 不成立，所以l不会继续++
+            */
             for(int l = 0, r = 0 ; r < pos.size(); r++){
                 while(pos.get(r) - pos.get(l) - (r - l) > k){
                     l++;
