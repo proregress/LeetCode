@@ -4,22 +4,25 @@ public class Solution {
     public static int maxVowels(String s, int k) {
         int ans = 0;
 
-        // 定长k，左边界l=0, 从左至右依次遍历
-        for(int l = 0 ; l + k <= s.length(); l++){
-            int temp = 0;
-            //得到定长为k的子串
-            String subStr = s.substring(l, l+k);
-            //对子串的每个字符判断，得到元音数量
-            for(char c : subStr.toCharArray()){
-                /**
-                 * 使用indexOf判断是否存在
-                 */
-//                if("aeuio".contains(String.valueOf(c))){
-                if("aeuio".indexOf(String.valueOf(c)) > 0){
-                    temp++;
-                }
+        int l = 0, r = l + k;
+        String subStr = s.substring(l,r);
+        int sum = 0;
+        for(char c : subStr.toCharArray()){
+            if("aeuio".indexOf(String.valueOf(c)) >= 0){
+                sum++;
             }
-            ans = Math.max(ans, temp);
+        }
+        ans = sum;
+        while(r < s.length()){
+            if("aeuio".indexOf(String.valueOf(s.charAt(r))) >= 0){
+                sum++;
+            }
+            if("aeuio".indexOf(String.valueOf(s.charAt(l))) >= 0){
+                sum--;
+            }
+            r++;
+            l++;
+            ans = Math.max(ans, sum);
         }
 
         return ans;
@@ -27,9 +30,10 @@ public class Solution {
     }
 
     public static void main(String[] args) {
-        String s = "weallloveyou";
-        int k = 7;
+        String s = "abciiidef";
+        int k = 3;
         int i = maxVowels(s, k);
         System.out.println("i = " + i);
     }
+
 }
