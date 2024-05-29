@@ -5,6 +5,8 @@ import java.util.Stack;
 /**
  * 正着入栈
  * 主要是判断是否后面两个都是右括号有点麻烦
+ *
+ * 虽然写得有点繁，但是用栈就是这个思路
  */
 public class Solution {
     public static int minInsertions(String s) {
