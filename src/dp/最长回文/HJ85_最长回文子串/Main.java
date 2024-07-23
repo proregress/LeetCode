@@ -1,4 +1,4 @@
-package hj.HJ85_最长回文子串;
+package dp.最长回文.HJ85_最长回文子串;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package hj.HJ32_密码截取;
+package dp.最长回文.HJ32_密码截取;
 
 import java.util.Scanner;
 
