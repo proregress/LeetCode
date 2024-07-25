@@ -3,6 +3,7 @@ package dp.L0064_最小路径和;
 import java.util.Arrays;
 
 /**
+ * dfs 不适合此题，超时
  * @author xufan
  * @since 2024/01/28 20:54
  */
