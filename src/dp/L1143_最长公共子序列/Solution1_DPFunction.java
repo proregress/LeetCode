@@ -5,7 +5,7 @@ import java.util.Arrays;
 /**
  * TODO ; 还可以自底向上：https://mp.weixin.qq.com/s/ZhPEchewfc03xWv9VP3msg
  */
-public class Solution {
+public class Solution1_DPFunction {
     int[][] memo;
     public int longestCommonSubsequence(String text1, String text2) {
         int m = text1.length(), n = text2.length();
